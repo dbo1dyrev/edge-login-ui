@@ -14,6 +14,7 @@
   "homepage": "https://github.com/EdgeApp/edge-login-ui",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Airbitz, Inc.",
+  "main": "src/index.js",
   "files": [
     "android/**",
     "edge-login-ui-rn.podspec",
@@ -22,9 +23,11 @@
     "src/**",
     "README.md"
   ],
-  "main": "src/index.js",
   "scripts": {
     "prepare": "echo nothing to do"
+  },
+  "resolutions": {
+    "scrypt.js": "0.3.0"
   },
   "dependencies": {
     "cleaners": "^0.3.1",
@@ -48,6 +51,8 @@
   },
   "devDependencies": {
     "@react-native-community/art": "^1.0.2",
+    "@types/react-native": "^0.64.4",
+    "@types/sprintf-js": "^1.1.2",
     "edge-core-js": "^0.17.28",
     "flow-bin": "^0.84.0"
   },
@@ -55,8 +60,5 @@
     "@react-native-community/art": "*",
     "react": "*",
     "react-native": "*"
-  },
-  "resolutions": {
-    "scrypt.js": "0.3.0"
   }
 }
