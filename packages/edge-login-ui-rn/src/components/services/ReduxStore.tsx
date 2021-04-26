@@ -21,7 +21,7 @@ interface Props {
  * Consolidates our Redux setup logic into one place.
  */
 export class ReduxStore extends React.Component<Props> {
-  store: Store<RootState, Action>
+  store: Store<RootState>
 
   constructor(props: Props) {
     super(props)
@@ -34,7 +34,7 @@ export class ReduxStore extends React.Component<Props> {
     )
 
     new Promise(resolve => {
-      // $FlowFixMe Flow doesn't know about thunks at this point.
+      // @ts-expect-error Flow doesn't know about thunks at this point.
       resolve(this.store.dispatch(this.props.initialAction))
     }).catch(showError)
   }
