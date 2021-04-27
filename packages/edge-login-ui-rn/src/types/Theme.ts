@@ -1,11 +1,24 @@
 // @flow
+type FontWeight =
+  | 'normal'
+  | 'bold'
+  | '100'
+  | '200'
+  | '300'
+  | '400'
+  | '500'
+  | '600'
+  | '700'
+  | '800'
+  | '900'
+
 export interface Theme {
   // The app scaling factor, which is the height of "normal" text:
   rem: (size: number) => number
 
   pressedOpacity: number
   fontFamily: string
-  fontWeightBold: string
+  fontWeightBold: FontWeight
 
   // Background colors:
   backgroundGradientLeft: string
