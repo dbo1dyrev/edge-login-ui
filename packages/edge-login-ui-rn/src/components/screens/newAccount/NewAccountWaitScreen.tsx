@@ -85,4 +85,4 @@ const styles = {
     fontFamily: Constants.FONTS.fontFamilyRegular,
     color: Colors.GRAY_2
   }
-}
+} as const

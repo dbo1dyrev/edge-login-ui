@@ -138,7 +138,7 @@ const styles = {
     paddingBottom: scale(20)
   },
   inputBox: Styles.MaterialInputOnWhite
-}
+} as const
 
 export const NewAccountUsernameScreen = connect<
   StateProps,

@@ -82,4 +82,4 @@ const styles = {
     width: scale(74),
     height: scale(20)
   }
-}
+} as const

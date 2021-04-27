@@ -266,7 +266,7 @@ const styles = {
     paddingRight: scale(15),
     paddingBottom: scale(15)
   }
-}
+} as const
 
 export const AccountInfo = connect<StateProps, {}, OwnProps>(
   (state: RootState) => ({

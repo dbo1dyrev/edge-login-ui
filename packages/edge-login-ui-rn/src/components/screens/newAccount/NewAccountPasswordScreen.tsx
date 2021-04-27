@@ -205,7 +205,7 @@ const styles = {
     marginTop: scale(15)
   },
   passwordShim: { width: '100%', height: 1, marginTop: scale(35) }
-}
+} as const
 
 export const NewAccountPasswordScreen = connect<
   StateProps,

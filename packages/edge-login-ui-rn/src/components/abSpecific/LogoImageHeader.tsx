@@ -63,4 +63,4 @@ const styles = {
     overflow: 'visible',
     resizeMode: 'contain'
   }
-}
+} as const

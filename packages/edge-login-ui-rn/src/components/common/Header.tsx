@@ -163,7 +163,7 @@ const styles = {
       height: scale(50)
     }
   }
-}
+} as const
 
 export const Header = connect<StateProps, {}, OwnProps>(
   (state: RootState) => {

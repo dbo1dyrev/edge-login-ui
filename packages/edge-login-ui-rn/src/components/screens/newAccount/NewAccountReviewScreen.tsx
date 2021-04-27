@@ -170,7 +170,7 @@ const styles = {
     downStyle: { ...Styles.PrimaryButtonDownScaledStyle, width: '80%' },
     upTextStyle: Styles.PrimaryButtonUpTextScaledStyle
   }
-}
+} as const
 
 export const NewAccountReviewScreen = connect<{}, DispatchProps, OwnProps>(
   (state: RootState) => ({}),

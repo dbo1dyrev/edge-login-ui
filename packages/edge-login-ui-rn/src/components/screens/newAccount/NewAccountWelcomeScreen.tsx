@@ -139,7 +139,7 @@ const styles = {
       color: Constants.SECONDARY
     }
   }
-}
+} as const
 
 export const NewAccountWelcomeScreen = connect<{}, DispatchProps, OwnProps>(
   (state: RootState) => ({}),

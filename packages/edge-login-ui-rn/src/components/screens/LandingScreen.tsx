@@ -150,7 +150,7 @@ const styles = {
     },
     downStyle: Styles.TextOnlyButtonDownStyle
   }
-}
+} as const
 
 export const LandingScreen = connect<{}, DispatchProps, OwnProps>(
   (state: RootState) => ({}),
