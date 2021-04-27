@@ -9,7 +9,7 @@ type Props = {
   src: any // require(image)
 }
 
-class ImageHeaderComponent extends React.Component<Props> {
+export class ImageHeaderComponent extends React.Component<Props> {
   render() {
     return (
       <View style={styles.container}>
@@ -34,5 +34,3 @@ const styles = {
     resizeMode: 'contain'
   }
 }
-
-export { ImageHeaderComponent }
