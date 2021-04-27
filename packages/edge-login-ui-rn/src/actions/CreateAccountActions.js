@@ -8,7 +8,6 @@ import * as Constants from '../constants/index.js'
 import { enableTouchId, isTouchDisabled } from '../keychain.js'
 import type { Dispatch, GetState, Imports } from '../types/ReduxTypes.js'
 import { logEvent } from '../util/analytics.js'
-import { isASCII } from '../util/ASCIIUtil.js'
 import { getPreviousUsers, setMostRecentUsers } from './PreviousUsersActions.js'
 
 export type CreateUserData = {
@@ -60,6 +59,11 @@ export function checkUsernameForAvailabilty(data: string) {
         })
     }, 300)
   }
+}
+
+function isASCII(str: string) {
+  // eslint-disable-next-line no-control-regex
+  return /^[\x00-\x7F]*$/.test(str)
 }
 
 export function validateUsername(data: string) {
