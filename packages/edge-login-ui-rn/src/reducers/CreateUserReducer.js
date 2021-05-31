@@ -15,7 +15,8 @@ export type CreateState = {|
   +pinError: string,
   +pinErrorMessage: string | null,
   +username: string | null,
-  +usernameErrorMessage: string | null
+  +usernameErrorMessage: string | null,
+  +checkUsernameAvailabiltyPending: boolean
 |}
 
 const initialState: CreateState = {
@@ -29,7 +30,8 @@ const initialState: CreateState = {
   confirmPasswordErrorMessage: null,
   pinErrorMessage: null,
   usernameErrorMessage: null,
-  createErrorMessage: null
+  createErrorMessage: null,
+  checkUsernameAvailabiltyPending: false
 }
 
 export function create(
@@ -46,6 +48,11 @@ export function create(
         ...state,
         username: action.data.username,
         usernameErrorMessage: action.data.error
+      }
+    case 'CHECK_USERNAME_AVAILABILTY_PENDING':
+      return {
+        ...state,
+        checkUsernameAvailabiltyPending: action.data
       }
     case 'CREATE_UPDATE_PIN':
       return {

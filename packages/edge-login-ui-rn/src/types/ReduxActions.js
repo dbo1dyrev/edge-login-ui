@@ -59,6 +59,10 @@ export type Action =
       data: { username: string, error: string | null }
     }
   | {
+      type: 'CHECK_USERNAME_AVAILABILTY_PENDING',
+      data: boolean
+    }
+  | {
       type: 'LOGIN_PIN_FAIL',
       data: {
         message: string,

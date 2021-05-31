@@ -35,7 +35,8 @@
     "react-native-linear-gradient": "^2.0.0",
     "react-native-localize": "^2.0.2",
     "react-native-mail": "^6.0.0",
-    "react-native-material-textfield": "git://github.com/EdgeApp/react-native-material-textfield.git",
+    "react-native-material-textfield-legacy": "git://github.com/EdgeApp/react-native-material-textfield.git",
+    "react-native-material-textfield": "^0.16.1",
     "react-native-patina": "^0.1.3",
     "react-native-permissions": "^3.0.1",
     "react-native-share": "^5.1.4",
@@ -57,6 +58,7 @@
     "react-native": "*"
   },
   "resolutions": {
-    "scrypt.js": "0.3.0"
+    "scrypt.js": "0.3.0",
+    "react-native-material-textfield": "0.16.1"
   }
 }

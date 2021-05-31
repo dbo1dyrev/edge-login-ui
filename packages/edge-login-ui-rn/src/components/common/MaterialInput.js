@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { TextField } from 'react-native-material-textfield'
+import { TextField } from 'react-native-material-textfield-legacy'
 
 import { scale } from '../../util/scaling.js'
 

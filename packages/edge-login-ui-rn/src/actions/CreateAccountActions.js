@@ -34,6 +34,7 @@ export function checkUsernameForAvailabilty(data: string) {
     const context = imports.context
     // dispatch(openLoading()) Legacy dealt with state for showing a spinner
     // the timeout is a hack until we put in interaction manager.
+    dispatch({ type: 'CHECK_USERNAME_AVAILABILTY_PENDING', data: true })
     setTimeout(() => {
       context
         .usernameAvailable(data)
@@ -57,6 +58,9 @@ export function checkUsernameForAvailabilty(data: string) {
         })
         .catch(e => {
           console.log(e.message)
+        })
+        .finally(() => {
+          dispatch({ type: 'CHECK_USERNAME_AVAILABILTY_PENDING', data: false })
         })
     }, 300)
   }

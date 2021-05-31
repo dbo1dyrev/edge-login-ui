@@ -49,6 +49,10 @@ export const edgeDark: Theme = {
   fontWeightBold: 'bold',
   pressedOpacity: 0.25,
 
+  // Icons
+  icon: palette.white,
+  iconDeactivated: palette.whiteOp75,
+
   // background
   backgroundGradientLeft: palette.edgeNavy,
   backgroundGradientRight: palette.darkBlue,

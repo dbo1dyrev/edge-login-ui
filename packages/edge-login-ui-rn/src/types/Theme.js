@@ -8,6 +8,10 @@ export type Theme = {|
   fontFamily: string,
   fontWeightBold: string,
 
+  // Icons
+  icon: string,
+  iconDeactivated: string,
+
   // Background colors:
   backgroundGradientLeft: string,
   backgroundGradientRight: string,
